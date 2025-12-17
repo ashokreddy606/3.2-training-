@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Ashok Reddy | Portfolio</title>
+
+<style>
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:linear-gradient(120deg,#0f2027,#203a43,#2c5364);
+    color:#fff;
+}
+
+/* HEADER */
+header{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
+
+.hero{
+    background:rgba(255,255,255,0.1);
+    padding:50px;
+    border-radius:20px;
+    backdrop-filter:blur(10px);
+    box-shadow:0 20px 40px rgba(0,0,0,0.4);
+    animation:fadeIn 1.5s ease;
+}
+
+.hero h1{
+    font-size:3rem;
+    font-weight:600;
+}
+
+.hero span{
+    color:#00e5ff;
+}
+
+.hero p{
+    margin-top:10px;
+    font-size:1.2rem;
+    opacity:0.9;
+}
+
+/* SECTIONS */
+section{
+    max-width:1100px;
+    margin:60px auto;
+    padding:30px;
+}
+
+h2{
+    font-size:2rem;
+    margin-bottom:20px;
+    position:relative;
+}
+
+h2::after{
+    content:'';
+    width:60px;
+    height:4px;
+    background:#00e5ff;
+    position:absolute;
+    left:0;
+    bottom:-8px;
+}
+
+/* CARDS */
+.card{
+    background:rgba(255,255,255,0.1);
+    border-radius:15px;
+    padding:25px;
+    margin-bottom:20px;
+    backdrop-filter:blur(10px);
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 30px rgba(0,0,0,0.4);
+}
+
+/* SKILLS */
+.skills{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+    gap:15px;
+}
+
+.skill{
+    text-align:center;
+    padding:15px;
+    background:rgba(0,229,255,0.15);
+    border-radius:10px;
+    font-weight:500;
+}
+
+/* PROJECTS */
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+}
+
+/* CONTACT */
+.contact p{
+    margin:8px 0;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:20px;
+    background:rgba(0,0,0,0.4);
+    margin-top:50px;
+}
+
+/* ANIMATION */
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    .hero h1{
+        font-size:2.2rem;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<header>
+    <div class="hero">
+        <h1>Hi, I'm <span>Ashok Reddy</span></h1>
+        <p>Frontend Developer | Student | Tech Learner</p>
+    </div>
+</header>
+
+<!-- ABOUT -->
+<section>
+    <h2>About Me</h2>
+    <div class="card">
+        <p>
+            I am Ashok Reddy, a passionate frontend developer in the making.
+            I love designing modern, responsive websites and continuously
+            improving my skills in HTML, CSS, and JavaScript.
+        </p>
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section>
+    <h2>Skills</h2>
+    <div class="skills">
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">Git & GitHub</div>
+        <div class="skill">Responsive Design</div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section>
+    <h2>Projects</h2>
+    <div class="projects">
+        <div class="card">
+            <h3>Portfolio Website</h3>
+            <p>Personal portfolio built using modern HTML & CSS.</p>
+        </div>
+        <div class="card">
+            <h3>Blog Layout</h3>
+            <p>Stylish blog website layout focused on readability.</p>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact">
+    <h2>Contact</h2>
+    <div class="card">
+        <p>Email: ashokreddy@gmail.com</p>
+        <p>GitHub: github.com/ashokreddy</p>
+        <p>LinkedIn: linkedin.com/in/ashokreddy</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 Ashok Reddy | Designed with ❤️</p>
+</footer>
+
+</body>
+</html>
