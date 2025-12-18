@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+:root{
+  --bg:#0f2027;
+  --card:rgba(255,255,255,0.1);
+  --text:#fff;
+  --accent:#00e5ff;
+}
+
+.light{
+  --bg:#f4f4f4;
+  --card:#fff;
+  --text:#000;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Poppins,sans-serif;
+}
+
+body{
+  background:var(--bg);
+  color:var(--text);
+  transition:0.4s;
+}
+
+/* NAVBAR */
+nav{
+  position:fixed;
+  top:0;
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 40px;
+  background:rgba(0,0,0,0.4);
+  backdrop-filter:blur(10px);
+  z-index:1000;
+}
+
+nav ul{
+  display:flex;
+  list-style:none;
+  gap:20px;
+}
+
+nav a{
+  color:var(--text);
+  text-decoration:none;
+}
+
+#themeToggle{
+  background:none;
+  border:none;
+  font-size:1.2rem;
+  cursor:pointer;
+}
+
+/* HERO */
+header{
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+
+.hero{
+  background:var(--card);
+  padding:50px;
+  border-radius:20px;
+}
+
+.hero span{ color:var(--accent); }
+
+.btn{
+  display:inline-block;
+  margin-top:20px;
+  padding:12px 30px;
+  background:var(--accent);
+  color:#000;
+  border-radius:30px;
+  text-decoration:none;
+}
+
+/* SECTIONS */
+section{
+  max-width:1100px;
+  margin:80px auto;
+  padding:30px;
+}
+
+.card{
+  background:var(--card);
+  padding:25px;
+  border-radius:15px;
+}
+
+/* SKILLS */
+.skills{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+  gap:15px;
+}
+
+.skill{
+  background:var(--accent);
+  color:#000;
+  padding:15px;
+  border-radius:10px;
+  text-align:center;
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:20px;
+}
